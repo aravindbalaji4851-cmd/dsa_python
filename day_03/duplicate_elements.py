@@ -13,6 +13,6 @@ else: print("false")
 
 """
 
-lst = [1,2,3]
+lst = [1,2,3,1]
 
 print(len(lst)!=len(set(lst)))
