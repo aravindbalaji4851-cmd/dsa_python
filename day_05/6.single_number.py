@@ -24,12 +24,16 @@ Output: 1
 
 nums = [2,2,3,1,1]
 
+# xor method
+
+ans = 0
+
 for i in nums:
 
-    if nums.count(i) ==1:
+    ans = ans ^ i         # ^ => does xor
 
-        print(i)
-        break
+print(ans)
+
 
 
 

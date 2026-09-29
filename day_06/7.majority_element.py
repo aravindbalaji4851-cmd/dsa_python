@@ -13,6 +13,7 @@ Input: nums = [2,2,1,1,1,2,2]
 Output: 2
 """
 
+"""
 nums = [2,2,1,1,1,2,2]
 
 for i in nums:
@@ -21,3 +22,26 @@ for i in nums:
 
         print(i)
         break
+"""
+
+# better method
+
+nums = [2,2,1,1,1,2,2]
+
+ans = None
+
+count = 0
+
+for i in nums:
+
+    if count == 0:
+
+        ans = i
+
+    if ans == i :
+
+        count += 1
+
+    else: count -=1
+
+print(ans)
