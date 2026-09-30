@@ -12,11 +12,30 @@ Incrementing by one gives 123 + 1 = 124.
 Thus, the result should be [1,2,4].
 """
 
-digits = [9,9,9]
+digits = [1,9,9]
 
+"""
 num = int("".join(map(str,digits)))+1
 
 plus_one = [int(i) for i in str(num)]
 
 print(plus_one)
+
+"""
+# better method
+
+for i in range(len(digits)-1,-1,-1):
+
+    if digits[i] < 9:
+
+        digits[i] += 1
+        break
+
+    digits[i] = 0
+
+else: digits.insert(0,1)
+
+print(digits)
+
+
 
