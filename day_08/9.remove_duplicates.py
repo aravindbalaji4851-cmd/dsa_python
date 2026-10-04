@@ -23,11 +23,5 @@ print(nums)
 
 print("k = ",j+1)
 
-
-
 print(nums)
-        
-
-    
-
-    
+ 
